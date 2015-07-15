@@ -61,6 +61,7 @@ html, body, .flexbox{
     font-size: 2em;
     color: white;
     font-family: 'Playfair Display', serif;
+    padding: 0 50px;
   }
 
 }
@@ -147,6 +148,20 @@ button{
 }
 
 
+button:hover{
+  background: transparent;
+  border: 2px solid $white;
+  padding: 15px 25px;
+  border-radius: 2px;
+  font-size: 1.5em;
+  color: $white;
+}
+
+button:focus {
+  outline: none;
+}
+
+
 .centerTitle{
   position: absolute;
   top: 20%;
@@ -209,7 +224,22 @@ html, body {
   right: -30em;
   background: #f3f3f3;
   border-right: 2px solid #333333;
-  padding: 15px;
+}
+
+hr{
+  height: 1px;
+  background: #e7e7e7;
+}
+
+.menuItem{
+  padding: 20px;
+
+a{
+  color: gray;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
 }
 
 
