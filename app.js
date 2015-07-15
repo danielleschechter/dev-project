@@ -13,7 +13,22 @@ var path = require('path');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+
+
 var app = express();
+
+app.get('/', function (req, res) {
+  res.render('index.ejs', {
+    title: 'My portfolio'
+  });
+});
+
+// will match requests to /projects
+app.get('/projects', function (req, res) {
+  res.render('projects.ejs', {
+    title: 'My projects'
+      });
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

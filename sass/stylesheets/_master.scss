@@ -65,6 +65,37 @@ html, body, .flexbox{
 
 }
 
+.projectsContainer{
+  background:#F3F2F0;
+
+  h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    padding: 20px 0 0 0;
+    line-height: 1.5;
+  }
+
+  h4{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 2.2;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  p{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 2.2;
+    color: #666;
+  }
+  
+  .story{
+    padding: 10px 100px;
+  }
+}
+
 .border{
   width: 100%;
   position: fixed;
@@ -124,4 +155,18 @@ button{
   z-index: 999;
   border: none;
   padding:20px;
+}
+
+
+#carbonCMS{
+  background: url('https://themidatlanticlounge.files.wordpress.com/2014/07/summermusicfest.jpg');
+  height: 300px;
+}
+
+.projectDescription{
+  border-top: 5px solid #e7e7e7;
+}
+
+.pt20{
+  padding-top:20px;
 }
