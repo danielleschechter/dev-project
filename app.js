@@ -30,6 +30,13 @@ app.get('/projects', function (req, res) {
       });
 });
 
+// will match requests to /projects
+app.get('/test', function (req, res) {
+  res.render('test.ejs', {
+    title: 'My projects'
+  });
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
