@@ -1,8 +1,18 @@
 $white: #ffffff;
 
+@-webkit-keyframes backgroundColors {
+  0% {background-color: #EA6045; }
+  25% {background-color: #F8CA4D;}
+  50% {background-color: #F5E5C0;}
+  75% {background-color: #3F5666;}
+  100% {background-color: #2F3440;}
+}
+
 html, body, .flexbox{
   background: $white;
   height: 100% !important;
+  background-color: #EA6045;
+  -webkit-animation: backgroundColors 20s infinite alternate;
 }
 
 /*
@@ -25,6 +35,14 @@ html, body, .flexbox{
 */
 
 @-webkit-keyframes backgroundColors {
+  0% {background-color: #EA6045; }
+  25% {background-color: #F8CA4D;}
+  50% {background-color: #F5E5C0;}
+  75% {background-color: #3F5666;}
+  100% {background-color: #2F3440;}
+}
+
+@-webkit-keyframes backgroundColors2 {
   0% {background-color: #EA6045; }
   25% {background-color: #F8CA4D;}
   50% {background-color: #F5E5C0;}
@@ -67,7 +85,8 @@ html, body, .flexbox{
 }
 
 .projectsContainer{
-  background:#F3F2F0;
+//  background:#F3F2F0;
+  text-align: left;
 
   h2{
     font-family: 'Oswald', sans-serif;
@@ -272,4 +291,10 @@ a.toggle-nav {position: absolute;
 
 .btn:active, .btn.active{
   box-shadow: none;
+}
+
+.colorBackground{
+  background-color: #EA6045;
+  -webkit-animation: backgroundColors2 20s infinite alternate;
+  text-align: center;
 }
